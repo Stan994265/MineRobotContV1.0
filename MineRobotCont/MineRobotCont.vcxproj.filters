@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\MineRobotCont.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\MineRobotCont.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MineRobotCont.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MineRobotContDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CvvImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CUDPManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UNetwork.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketBlockClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="can_copley.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="can_ixxat_v3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CANtype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Amp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_AmpDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_AmpStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Array.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Can.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_CanOpen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Copley.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_CopleyIO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Error.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_ErrorCodes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_EtherCAT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_EventMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_File.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Firmware.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Geometry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_InputShaper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_IO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Linkage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Network.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Path.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_PDO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Reference.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_SDO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Settings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Threads.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Trajectory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_TrjScurve.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CML_Utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="com.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="copley_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KLNtype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LINtype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vci3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vciCtrlType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vcierr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vciguid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vciIdType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vcinpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vcitype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vciver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartAxis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartAxisLabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartBalloonLabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartBarSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCandlestickSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCrossHairCursor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartCursor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartDateTimeAxis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartDragLineCursor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartFont.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGanttSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGradient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartGrid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLegend.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLineSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartLogarithmicAxis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartMouseListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartPointsArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartPointsSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartScrollBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSerieBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSeriesMouseListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartStandardAxis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartSurfaceSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartTitle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\ChartXYSerie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartClass\PointsOrdering.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MineRobotCont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MineRobotContDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CvvImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CUDPManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UNetwork.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketBlockClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Amp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AmpFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AmpFW.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AmpParam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AmpPDO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AmpPVT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AmpStruct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AmpUnits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AmpVersion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Can.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="can_copley.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="can_ixxat_v3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CanOpen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CML.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Com.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CopleyIO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CopleyIOFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CopleyNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ecatdc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EtherCAT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EventMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Firmware.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InputShaper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IOmodule.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Linkage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LSS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PDO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Reference.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Threads.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Threads_w32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TrjScurve.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartAxis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartAxisLabel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartBarSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCandlestickSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCrossHairCursor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartCursor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartDateTimeAxis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartDragLineCursor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartFont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGanttSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGradient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartGrid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLegend.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLineSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartLogarithmicAxis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartPointsSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartScrollBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartStandardAxis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartSurfaceSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartTitle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartClass\ChartXYSerie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MineRobotCont.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

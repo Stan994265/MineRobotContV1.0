@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6247CDD-36E2-447D-852B-881628AC2208}</ProjectGuid>
+    <RootNamespace>MineRobotCont</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\opencv\build\include\opencv2;D:\opencv\build\include;D:\opencv\build\include\opencv;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\opencv\build\x86\vc10\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;opencv_calib3d2411d.lib;opencv_contrib2411d.lib;opencv_core2411d.lib;opencv_features2d2411d.lib;opencv_flann2411d.lib;opencv_gpu2411d.lib;opencv_highgui2411d.lib;opencv_imgproc2411d.lib;opencv_legacy2411d.lib;opencv_ml2411d.lib;opencv_nonfree2411d.lib;opencv_objdetect2411d.lib;opencv_ocl2411d.lib;opencv_photo2411d.lib;opencv_stitching2411d.lib;opencv_superres2411d.lib;opencv_ts2411d.lib;opencv_video2411d.lib;opencv_videostab2411d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\MineRobotCont.ico" />
+    <None Include="res\MineRobotCont.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CANtype.h" />
+    <ClInclude Include="can_copley.h" />
+    <ClInclude Include="can_ixxat_v3.h" />
+    <ClInclude Include="ChartClass\ChartAxis.h" />
+    <ClInclude Include="ChartClass\ChartAxisLabel.h" />
+    <ClInclude Include="ChartClass\ChartBalloonLabel.h" />
+    <ClInclude Include="ChartClass\ChartBarSerie.h" />
+    <ClInclude Include="ChartClass\ChartCandlestickSerie.h" />
+    <ClInclude Include="ChartClass\ChartCrossHairCursor.h" />
+    <ClInclude Include="ChartClass\ChartCtrl.h" />
+    <ClInclude Include="ChartClass\ChartCursor.h" />
+    <ClInclude Include="ChartClass\ChartDateTimeAxis.h" />
+    <ClInclude Include="ChartClass\ChartDragLineCursor.h" />
+    <ClInclude Include="ChartClass\ChartFont.h" />
+    <ClInclude Include="ChartClass\ChartGanttSerie.h" />
+    <ClInclude Include="ChartClass\ChartGradient.h" />
+    <ClInclude Include="ChartClass\ChartGrid.h" />
+    <ClInclude Include="ChartClass\ChartLabel.h" />
+    <ClInclude Include="ChartClass\ChartLegend.h" />
+    <ClInclude Include="ChartClass\ChartLineSerie.h" />
+    <ClInclude Include="ChartClass\ChartLogarithmicAxis.h" />
+    <ClInclude Include="ChartClass\ChartMouseListener.h" />
+    <ClInclude Include="ChartClass\ChartPointsArray.h" />
+    <ClInclude Include="ChartClass\ChartPointsSerie.h" />
+    <ClInclude Include="ChartClass\ChartScrollBar.h" />
+    <ClInclude Include="ChartClass\ChartSerie.h" />
+    <ClInclude Include="ChartClass\ChartSerieBase.h" />
+    <ClInclude Include="ChartClass\ChartSeriesMouseListener.h" />
+    <ClInclude Include="ChartClass\ChartStandardAxis.h" />
+    <ClInclude Include="ChartClass\ChartString.h" />
+    <ClInclude Include="ChartClass\ChartSurfaceSerie.h" />
+    <ClInclude Include="ChartClass\ChartTitle.h" />
+    <ClInclude Include="ChartClass\ChartXYSerie.h" />
+    <ClInclude Include="ChartClass\PointsOrdering.h" />
+    <ClInclude Include="CML.h" />
+    <ClInclude Include="CML_Amp.h" />
+    <ClInclude Include="CML_AmpDef.h" />
+    <ClInclude Include="CML_AmpStruct.h" />
+    <ClInclude Include="CML_Array.h" />
+    <ClInclude Include="CML_Can.h" />
+    <ClInclude Include="CML_CanOpen.h" />
+    <ClInclude Include="CML_Copley.h" />
+    <ClInclude Include="CML_CopleyIO.h" />
+    <ClInclude Include="CML_Error.h" />
+    <ClInclude Include="CML_ErrorCodes.h" />
+    <ClInclude Include="CML_EtherCAT.h" />
+    <ClInclude Include="CML_EventMap.h" />
+    <ClInclude Include="CML_File.h" />
+    <ClInclude Include="CML_Filter.h" />
+    <ClInclude Include="CML_Firmware.h" />
+    <ClInclude Include="CML_Geometry.h" />
+    <ClInclude Include="CML_InputShaper.h" />
+    <ClInclude Include="CML_IO.h" />
+    <ClInclude Include="CML_Linkage.h" />
+    <ClInclude Include="CML_Network.h" />
+    <ClInclude Include="CML_Node.h" />
+    <ClInclude Include="CML_Path.h" />
+    <ClInclude Include="CML_PDO.h" />
+    <ClInclude Include="CML_Reference.h" />
+    <ClInclude Include="CML_SDO.h" />
+    <ClInclude Include="CML_Settings.h" />
+    <ClInclude Include="CML_Threads.h" />
+    <ClInclude Include="CML_Trajectory.h" />
+    <ClInclude Include="CML_TrjScurve.h" />
+    <ClInclude Include="CML_Utils.h" />
+    <ClInclude Include="com.h" />
+    <ClInclude Include="Common\CUDPManager.h" />
+    <ClInclude Include="Common\UNetwork.h" />
+    <ClInclude Include="copley_internal.h" />
+    <ClInclude Include="CvvImage.h" />
+    <ClInclude Include="KLNtype.h" />
+    <ClInclude Include="LINtype.h" />
+    <ClInclude Include="MineRobotCont.h" />
+    <ClInclude Include="MineRobotContDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SocketBlockClient.h" />
+    <ClInclude Include="SocketDefine.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="vci3.h" />
+    <ClInclude Include="vciCtrlType.h" />
+    <ClInclude Include="vcierr.h" />
+    <ClInclude Include="vciguid.h" />
+    <ClInclude Include="vciIdType.h" />
+    <ClInclude Include="vcinpl.h" />
+    <ClInclude Include="vcitype.h" />
+    <ClInclude Include="vciver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Amp.cpp" />
+    <ClCompile Include="AmpFile.cpp" />
+    <ClCompile Include="AmpFW.cpp" />
+    <ClCompile Include="AmpParam.cpp" />
+    <ClCompile Include="AmpPDO.cpp" />
+    <ClCompile Include="AmpPVT.cpp" />
+    <ClCompile Include="AmpStruct.cpp" />
+    <ClCompile Include="AmpUnits.cpp" />
+    <ClCompile Include="AmpVersion.cpp" />
+    <ClCompile Include="Can.cpp" />
+    <ClCompile Include="CanOpen.cpp" />
+    <ClCompile Include="can_copley.cpp" />
+    <ClCompile Include="can_ixxat_v3.cpp" />
+    <ClCompile Include="ChartClass\ChartAxis.cpp" />
+    <ClCompile Include="ChartClass\ChartAxisLabel.cpp" />
+    <ClCompile Include="ChartClass\ChartBarSerie.cpp" />
+    <ClCompile Include="ChartClass\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="ChartClass\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="ChartClass\ChartCtrl.cpp" />
+    <ClCompile Include="ChartClass\ChartCursor.cpp" />
+    <ClCompile Include="ChartClass\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="ChartClass\ChartDragLineCursor.cpp" />
+    <ClCompile Include="ChartClass\ChartFont.cpp" />
+    <ClCompile Include="ChartClass\ChartGanttSerie.cpp" />
+    <ClCompile Include="ChartClass\ChartGradient.cpp" />
+    <ClCompile Include="ChartClass\ChartGrid.cpp" />
+    <ClCompile Include="ChartClass\ChartLegend.cpp" />
+    <ClCompile Include="ChartClass\ChartLineSerie.cpp" />
+    <ClCompile Include="ChartClass\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="ChartClass\ChartPointsSerie.cpp" />
+    <ClCompile Include="ChartClass\ChartScrollBar.cpp" />
+    <ClCompile Include="ChartClass\ChartSerie.cpp" />
+    <ClCompile Include="ChartClass\ChartStandardAxis.cpp" />
+    <ClCompile Include="ChartClass\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="ChartClass\ChartTitle.cpp" />
+    <ClCompile Include="ChartClass\ChartXYSerie.cpp" />
+    <ClCompile Include="CML.cpp" />
+    <ClCompile Include="Com.cpp" />
+    <ClCompile Include="Common\CUDPManager.cpp" />
+    <ClCompile Include="Common\UNetwork.cpp" />
+    <ClCompile Include="CopleyIO.cpp" />
+    <ClCompile Include="CopleyIOFile.cpp" />
+    <ClCompile Include="CopleyNode.cpp" />
+    <ClCompile Include="CvvImage.cpp" />
+    <ClCompile Include="ecatdc.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="EtherCAT.cpp" />
+    <ClCompile Include="EventMap.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="Firmware.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="InputShaper.cpp" />
+    <ClCompile Include="IOmodule.cpp" />
+    <ClCompile Include="Linkage.cpp" />
+    <ClCompile Include="LSS.cpp" />
+    <ClCompile Include="MineRobotCont.cpp" />
+    <ClCompile Include="MineRobotContDlg.cpp" />
+    <ClCompile Include="Network.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="PDO.cpp" />
+    <ClCompile Include="Reference.cpp" />
+    <ClCompile Include="SDO.cpp" />
+    <ClCompile Include="SocketBlockClient.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Threads.cpp" />
+    <ClCompile Include="Threads_w32.cpp" />
+    <ClCompile Include="TrjScurve.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MineRobotCont.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MineRobotCont.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
